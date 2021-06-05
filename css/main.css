@@ -1,0 +1,132 @@
+/** 
+ * @ Variables 
+ * ================
+ */
+:root {
+  --primaryColor: #141414;
+  --secondaryColor: #1b1b1b;
+  --primaryInverseColor: #fff;
+  --secondaryInverseColor: #7c7c7c;
+  --accentColor: #f26419;
+
+  --prestashopLogoColor: #f10678;
+  --netCoreColor: #5c2992;
+  --facebookLogoColor: #3c5a99;
+  --linkedInLogoColor: #0077b5;
+  --githubLogoColor: #333;
+  --html5Color: #e44d26;
+  --css3Color: #2face5;
+  --sassColor: #cd6799;
+  --angularColor: #dc0030;
+  --javascriptColor: #f0db4f;
+  --vueColor: #41b883;
+  --mongoColor: #3baa51;
+  --mysqlColor: #40739e;
+  --postgresColor: #336791;
+  --nodeJsColor: #68a063;
+  --laravelColor: #f95039;
+  --railsColor: #c00;
+  --redisColor: #dc382c;
+
+  --xxsSpacer: 0.5rem;
+  --xsSpacer: 0.75rem;
+  --smSpacer: 1rem;
+  --mdSpacer: 1.5rem;
+  --lgSpacer: 2rem;
+  --xlSpacer: 2.5rem;
+  --xxlSpacer: 3rem;
+  --xxxlSpacer: 4rem;
+  --hugeSpacer: 6.5rem;
+
+  --xxsFontSize: 0.5rem;
+  --xsFontSize: 0.7rem;
+  --smFontSize: 0.9rem;
+  --mdFontSize: 1.5rem;
+  --lgFontSize: 2rem;
+  --xlFontSize: 2.5rem;
+  --xxlFontSize: 3rem;
+  --titleFontSize: 3.5rem;
+}
+
+/** 
+ * @ Reset 
+ * ================
+ */
+html,
+body,
+#App {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: #000;
+  color: var(--primaryInverseColor);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+::selection {
+  color: var(--primaryColor);
+  background: var(--javascriptColor);
+}
+
+::-moz-selection {
+  color: var(--primaryColor);
+  background: var(--javascriptColor);
+}
+
+/** 
+ * @ Grid 
+ * ================
+ */
+.container {
+  position: relative;
+  width: calc(100% - var(--lgSpacer));
+  padding: 0 var(--smSpacer);
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    padding: 0 var(--lgSpacer);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/** 
+ * @ Utils 
+ * ================
+ */
+.m-t-sm {
+  margin-top: var(--smSpacer);
+}
+
+.m-b-xxl {
+  margin-bottom: var(--xxlSpacer);
+}
